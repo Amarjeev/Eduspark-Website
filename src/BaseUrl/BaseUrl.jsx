@@ -2,7 +2,7 @@ const isLocal = window.location.hostname === "localhost";
 
 export const BaseUrl = isLocal
   ? "http://localhost:5000/"
-  :"https://api.eduspark.space/api/"
+  :"https://eduspark-backend-cyrx.onrender.com/api/"
 
 
 
