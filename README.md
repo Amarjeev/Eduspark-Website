@@ -1,4 +1,3 @@
-update this and bold model direct paste read me <<<<<<< HEAD
 # eduspark-frontend
 Eduspark client dashboard — the main user interface for students and clients to access personalized features and services
 =======
