@@ -1,88 +1,117 @@
-# eduspark-frontend
-Eduspark client dashboard — the main user interface for students and clients to access personalized features and services
-=======
-# EduSpark – School Management Platform
+🎓 EduSpark Frontend
 
-## Author  
-**Amarjeev**  
+Eduspark Client Dashboard — the main user interface for students, teachers, and clients to access personalized features and services.
 
-## Project Overview  
-EduSpark is a **School Management Platform** built with the MERN stack.  
-It provides **secure authentication, admin and student management, email notifications**, and a scalable architecture with professional frontend and backend.  
+👨‍💻 Author
 
----
+Amarjeev
 
-## Why EduSpark?  
-EduSpark was created to **simplify school management** by providing a **centralized platform** for administrators, teachers, and students.  
-Many schools struggle with managing **student data, exam marks, notifications, and admin tasks manually**. EduSpark solves this by offering a **digital, organized, and secure system**.  
+🚀 Project Overview
 
----
+EduSpark is a modern School Management Platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js).
+This frontend repository powers the student, teacher, and admin dashboards, offering a fast, secure, and responsive experience across all devices.
 
-## How EduSpark Works (Concept & Flow)  
+💡 Why EduSpark?
 
-1. **User Roles**  
-   - **Superadmin:** Can manage schools, admins, and oversee the platform.  
-   - **Admin:** Manages students, teachers, exams, and daily school operations.  
-   - **Student:** Views personal information, marks, and notifications.  
+Many schools still rely on manual systems for managing students, exams, and communications.
+EduSpark brings automation and efficiency through a centralized digital platform, simplifying management for admins, teachers, and students alike.
 
-2. **Authentication & Security**  
-   - Users register/login using **secure credentials**.  
-   - Passwords and sensitive data are stored securely, backend ensures **role-based access**.  
+🧭 System Roles & Flow
+👑 Superadmin
 
-3. **Backend Flow (Node.js + Express)**  
-   - Handles all **API requests** from the frontend.  
-   - Communicates with **MongoDB Atlas** to store and retrieve data.  
-   - Sends **emails via Brevo** for notifications and verification.  
-   - Stores **images and uploaded files on AWS S3**.  
+Manages schools and admin users
 
-4. **Frontend Flow (React.js)**  
-   - User-friendly interface built with React.js and Tailwind CSS.  
-   - Sends API requests via **Axios** to the backend.  
-   - Displays real-time data like student profiles, exam marks, and notifications.  
-   - Hosted on **AWS S3** and secured with **Cloudflare** domain/SSL.  
+Oversees the entire EduSpark ecosystem
 
-5. **Deployment & Hosting**  
- - Backend → hosted on Render
- - Frontend → hosted on Cloudflare Pages
- - Domain + SSL → managed by Cloudflare 
----
+🧑‍🏫 Admin
 
-## Tech Stack  
+Handles teachers, students, exams, and academic operations
 
-**Backend:**  
-- Node.js & Express.js  
-- MongoDB Atlas  
-- Brevo (Email service)  
-- AWS EC2 (Deployment)  
+Manages attendance, notifications, and data records
 
-**Frontend:**  
-- React.js  
-- Tailwind CSS  
-- Axios (API communication)  
-- AWS S3 (Hosting & Image Storage)  
-- Cloudflare (Domain & DNS)  
+🎓 Student
 
----
+Views personal details, marks, and updates
 
-## Key Features  
-- Admin & Superadmin authentication  
-- Email notifications via Brevo  
-- Student profile & data management  
-- Exam marks entry and retrieval  
-- Profile image uploads stored on **AWS S3**  
-- Secure backend with environment variables  
-- Backend deployed on **AWS EC2**  
-- Frontend hosted on **AWS S3 bucket**  
-- Domain & SSL configured via **Cloudflare**  
+Interacts through a personalized dashboard
 
----
+🔐 Authentication & Security
 
-## Deployment Details  
+Secure JWT-based authentication
 
-**Backend (AWS EC2):**  
-1. Node.js + Express APIs running on AWS EC2  
-2. Connected to MongoDB Atlas  
-3. Environment variables:  
-   ```env
-   MONGO_URI=your_mongo_connection_string
-   BREVO_API_KEY=your_brevo_api_key
+HTTP-only cookies for safe token storage
+
+Role-based access control
+
+All data exchanges occur over HTTPS
+
+Uses environment variables for sensitive keys
+
+🧩 Frontend Architecture (React.js + Tailwind CSS)
+
+Built with React.js (Vite setup)
+
+Tailwind CSS for modern UI design
+
+Axios for backend communication
+
+React Router DOM for route management
+
+Hosted securely on Cloudflare Pages
+
+☁️ Deployment & Infrastructure
+Component	Platform	Description
+Backend	Render	Node.js + Express REST API
+Frontend	Cloudflare Pages	React.js dashboard for students and admins
+Database	MongoDB Atlas	Cloud-hosted database
+Email Service	Brevo (SendinBlue)	Email notifications & verifications
+File Storage	AWS S3	Stores profile images and uploads
+Domain + SSL	Cloudflare	Custom domain & SSL management
+⚙️ Environment Variables (Frontend)
+
+Place these in your .env file at the project root:
+
+VITE_SECRET_KEY= .........
+
+
+🧠 Tech Stack Summary
+
+Frontend:
+
+⚛️ React.js (Vite)
+
+🎨 Tailwind CSS
+
+🔗 Axios
+
+🌐 Cloudflare Pages
+
+Backend:
+
+🟢 Node.js + Express.js
+
+☁️ MongoDB Atlas
+
+📩 Brevo (Email Service)
+
+🪣 AWS S3 (Storage)
+
+✨ Key Features
+
+Dynamic dashboards for Admin, Teacher, and Student
+
+Secure authentication system (JWT + Cookies)
+
+Email notifications via Brevo
+
+Profile image uploads to AWS S3
+
+Real-time data synchronization
+
+Optimized for performance using Vite
+
+Cloudflare-secured deployment with SSL
+
+🌍 Live Deployment
+
+🔗 https://www.eduspark.space
